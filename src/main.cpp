@@ -15,9 +15,8 @@
 #include <sqlite3.h>
 #include <sys/unistd.h>
 
-#if !defined(__has_feature) || !__has_feature(address_sanitizer)
-#define HAVE_EXCEPTIONS 1
-#endif
+#define HAVE_EXCEPTIONS
+#define USE_SQLITE3
 
 using namespace llvm;
 using namespace clang;
