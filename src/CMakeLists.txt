@@ -11,7 +11,11 @@ execute_process(
 
 string(REPLACE "-O3" "" LLVM_CXX_FLAGS ${LLVM_CXX_FLAGS})
 string(REPLACE "-NDEBUG" "" LLVM_CXX_FLAGS ${LLVM_CXX_FLAGS})
+string(REPLACE "-fno-exceptions" "" LLVM_CXX_FLAGS ${LLVM_CXX_FLAGS})
+
 string(REPLACE "\n" " " LLVM_LINK_FLAGS ${LLVM_LINK_FLAGS})
+string(REPLACE "-O3" "" LLVM_LINK_FLAGS ${LLVM_LINK_FLAGS})
+string(REPLACE "-fno-exceptions" "" LLVM_LINK_FLAGS ${LLVM_LINK_FLAGS})
 
 set_source_files_properties(main.cpp PROPERTIES COMPILE_FLAGS ${LLVM_CXX_FLAGS})
 
