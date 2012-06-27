@@ -20,7 +20,7 @@
 
 using namespace llvm;
 using namespace clang;
-using namespace tooling;
+using namespace clang::tooling;
 
 class TagsDeclInfo
 {
