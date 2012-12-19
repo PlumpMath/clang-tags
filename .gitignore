@@ -4,3 +4,4 @@ CMakeScripts/
 *.cmake
 Makefile
 clang-tags
+/CLTAGS
