@@ -25,23 +25,16 @@ set_target_properties(clang-tags PROPERTIES COMPILE_FLAGS ${LLVM_CXX_FLAGS})
 set_target_properties(clang-tags PROPERTIES LINK_FLAGS ${LLVM_LINK_FLAGS})
 
 target_link_libraries(clang-tags
-  clangARCMigrate
   clangAST
   clangAnalysis
   clangBasic
-  clangCodeGen
   clangDriver
   clangEdit
   clangFrontend
-  clangFrontendTool
   clangLex
   clangParse
-  clangRewrite
   clangSema
   clangSerialization
-  clangStaticAnalyzerCheckers
-  clangStaticAnalyzerCore
-  clangStaticAnalyzerFrontend
   clangTooling
 
   sqlite3)
